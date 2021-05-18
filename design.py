@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(499, 340)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(0, 0, 791, 531))
+        self.widget.setObjectName("widget")
+        self.taskNames = QtWidgets.QLineEdit(self.widget)
+        self.taskNames.setGeometry(QtCore.QRect(20, 70, 191, 25))
+        self.taskNames.setObjectName("taskNames")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setGeometry(QtCore.QRect(20, 30, 121, 17))
+        self.label.setObjectName("label")
+        self.reportButton = QtWidgets.QPushButton(self.widget)
+        self.reportButton.setGeometry(QtCore.QRect(240, 70, 171, 25))
+        self.reportButton.setObjectName("reportButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 499, 22))
+        self.menuBar.setObjectName("menuBar")
+        self.menu = QtWidgets.QMenu(self.menuBar)
+        self.menu.setObjectName("menu")
+        self.menu_4 = QtWidgets.QMenu(self.menu)
+        self.menu_4.setObjectName("menu_4")
+        self.menu_2 = QtWidgets.QMenu(self.menuBar)
+        self.menu_2.setObjectName("menu_2")
+        self.menu_3 = QtWidgets.QMenu(self.menuBar)
+        self.menu_3.setObjectName("menu_3")
+        MainWindow.setMenuBar(self.menuBar)
+        self.plan_group = QtWidgets.QAction(MainWindow)
+        self.plan_group.setObjectName("plan_group")
+        self.plan = QtWidgets.QAction(MainWindow)
+        self.plan.setObjectName("plan")
+        self.fact = QtWidgets.QAction(MainWindow)
+        self.fact.setObjectName("fact")
+        self.about = QtWidgets.QAction(MainWindow)
+        self.about.setObjectName("about")
+        self.import_fact = QtWidgets.QAction(MainWindow)
+        self.import_fact.setObjectName("import_fact")
+        self.import_plan_2 = QtWidgets.QAction(MainWindow)
+        self.import_plan_2.setObjectName("import_plan_2")
+        self.import_hierarchy = QtWidgets.QAction(MainWindow)
+        self.import_hierarchy.setObjectName("import_hierarchy")
+        self.menu_4.addAction(self.import_plan_2)
+        self.menu_4.addAction(self.import_hierarchy)
+        self.menu.addAction(self.plan_group)
+        self.menu.addAction(self.plan)
+        self.menu.addAction(self.menu_4.menuAction())
+        self.menu_2.addAction(self.fact)
+        self.menu_2.addAction(self.import_fact)
+        self.menu_3.addAction(self.about)
+        self.menuBar.addAction(self.menu_3.menuAction())
+        self.menuBar.addAction(self.menu.menuAction())
+        self.menuBar.addAction(self.menu_2.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Названия задач"))
+        self.reportButton.setText(_translate("MainWindow", "Сгенерировать отчет"))
+        self.menu.setTitle(_translate("MainWindow", "План работ"))
+        self.menu_4.setTitle(_translate("MainWindow", "Импорт данных"))
+        self.menu_2.setTitle(_translate("MainWindow", "Фактическое выполнение"))
+        self.menu_3.setTitle(_translate("MainWindow", "Общая информация"))
+        self.plan_group.setText(_translate("MainWindow", "Добавить группу"))
+        self.plan.setText(_translate("MainWindow", "Добавить задачу"))
+        self.fact.setText(_translate("MainWindow", "Данныые о задаче"))
+        self.about.setText(_translate("MainWindow", "О проекте"))
+        self.import_fact.setText(_translate("MainWindow", "Импорт данных"))
+        self.import_plan_2.setText(_translate("MainWindow", "План работ"))
+        self.import_hierarchy.setText(_translate("MainWindow", "Иерархия"))
+
